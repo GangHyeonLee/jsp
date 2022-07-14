@@ -6,9 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" />
+<script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
 
-    
+
 
     <!-- Bootstrap core CSS -->
 
@@ -41,14 +42,14 @@
     <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     
-	<div class="form-floating">
+	<div class="form-floating mb-3">
 	
-		<label for="userid"> 아이디: </label>
-		<input type="text" name="id" id="userid floatingInput" class="form-control" placeholder="name@example.com"><br>
+		<label class="form-label" for="userid"> 아이디: </label>
+		<input class="form-control" type="text" name="id" id="userid floatingInput" placeholder="name@example.com"><br>
 	</div>
-	<div class="form-floating" >
-		<label for="userpwd"> 암 &nbsp; 호 : </label>
-		<input type="text" name="pwd" id="userpwd floatingPassword" class="form-control" placeholder="Password"><br>
+	<div class="form-floating mb-3" >
+		<label class="form-label" for="userpwd" > 암 &nbsp; 호 : </label>
+		<input type="text" name="pwd" id="userpwd floatingPassword" class="form-contro" placeholder="Password"><br>
 	</div>
 		
 		<div class="checkbox mb-3">

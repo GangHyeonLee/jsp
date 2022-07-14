@@ -11,6 +11,7 @@
 		session.invalidate();
 	%>
 	
+	
 	<script>
 		alert("로그 아웃 되엇습니다.");
 		location.href="loginForm.jsp";
