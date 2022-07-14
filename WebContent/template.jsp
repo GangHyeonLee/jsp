@@ -2,11 +2,14 @@
     pageEncoding="UTF-8"%>
     
 <%
-	String pagefile = request.getParameter("page");
-	if(pagefile == null){
+ String pagefile = request.getParameter("page");
+		if(pagefile == null){
 		pagefile = "newitem";
 	}
-%>
+ 
+ %>
+ 
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +27,12 @@
 			<td width="15%">
 			<jsp:include page="left.jsp"></jsp:include>
 			</td>
-			<td><jsp:include page='<%=pagefile + ".jsp" %>'></jsp:include></td>
+			
+			<td><jsp:include page='<%= pagefile + ".jsp" %>'></jsp:include></td>
+			
+			
+			<td><jsp:include page="member.jsp"></jsp:include></td>
+			
 			
 		</tr>
 		<tr>

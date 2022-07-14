@@ -3,4 +3,4 @@
 
     
  <a href="login.jsp">Login</a>
- <a href="join.jsp">Join</a>
+ <a href="member.jsp">Join</a>
